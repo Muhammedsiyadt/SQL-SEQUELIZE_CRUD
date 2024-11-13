@@ -55,10 +55,10 @@ const deleteReview = async (req, res) => {
 
     res.send('Product Is Deleted ! ')
 }
-
+ 
 module.exports = {
     addReview,
-    getReviews,
+    getReviews, 
     getSingleReview,
     updateReview, 
     deleteReview
