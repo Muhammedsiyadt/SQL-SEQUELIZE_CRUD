@@ -50,8 +50,8 @@ const updateReview = async (req, res) => {
 // Delete review [ DELETE ]
 
 const deleteReview = async (req, res) => {
-    let id = req.params.id
-    await Review.destroy({ where: { id: id } })
+    let id = req.params.id 
+    await Review.destroy({ where: { id: id } }) 
 
     res.send('Product Is Deleted ! ')
 }
@@ -59,7 +59,7 @@ const deleteReview = async (req, res) => {
 module.exports = {
     addReview,   
     getReviews,    
-    getSingleReview,  
+    getSingleReview,   
     updateReview,  
     deleteReview 
 }
