@@ -54,7 +54,7 @@ const deleteReview = async (req, res) => {
     await Review.destroy({ where: { id: id } }) 
 
     res.send('Product Is Deleted ! ')
-}
+} 
   
 module.exports = {
     addReview,   
