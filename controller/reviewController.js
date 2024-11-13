@@ -60,7 +60,7 @@ module.exports = {
     addReview,
     getReviews,
     getSingleReview,
-    updateReview,
+    updateReview, 
     deleteReview
 }
 
