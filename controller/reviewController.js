@@ -57,9 +57,9 @@ const deleteReview = async (req, res) => {
 }
  
 module.exports = {
-    addReview,
-    getReviews, 
-    getSingleReview,
+    addReview, 
+    getReviews,  
+    getSingleReview, 
     updateReview, 
     deleteReview
 }
