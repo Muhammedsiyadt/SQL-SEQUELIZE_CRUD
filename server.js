@@ -4,13 +4,13 @@ const cors = require('cors')
 const app = express()
 
 var corsOption = {
-    origin: 'http://localhost:8001'
+    origin: 'http://localhost:8001' 
 }
 
 
 // Middlewares
-app.use(cors(corsOption))
-app.use(express.json())
+app.use(cors(corsOption)) 
+app.use(express.json()) 
 app.use(express.urlencoded({extended: true}))
 
 
