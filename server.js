@@ -6,7 +6,7 @@ const app = express()
 var corsOption = {
     origin: 'http://localhost:8001' 
 }
-
+ 
 
 // Middlewares
 app.use(cors(corsOption)) 
