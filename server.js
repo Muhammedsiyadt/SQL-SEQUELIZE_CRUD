@@ -20,11 +20,11 @@ app.use('/api/products', router)
 
 const reviewRouter = require('./routes/reviewRoutes.js')
 app.use('/api/reviews', reviewRouter)
-
+ 
 
 // Testing API
 app.get('/', (req, res) => {
-    res.json({message : 'Hello server initial API'})
+    res.json({message : 'Hello server initial API'}) 
 })
 
 
