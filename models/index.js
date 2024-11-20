@@ -17,7 +17,7 @@ const sequelize = new Sequelize(
             idle: dbConfig.pool.idle
         }
     }
-
+ 
 ) 
 
 sequelize.authenticate()
