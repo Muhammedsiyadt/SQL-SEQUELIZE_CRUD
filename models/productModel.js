@@ -8,10 +8,10 @@ module.exports= (sequalize, DataTypes) => {
        price: {
         type: DataTypes.INTEGER
        },
-       des: {
+       des: { 
         type: DataTypes.TEXT
        },
-       published: {
+       published: { 
         type: DataTypes.BOOLEAN
        }
     })
