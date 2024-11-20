@@ -14,14 +14,14 @@ const sequelize = new Sequelize(
             max: dbConfig.pool.max,
             min: dbConfig.pool.min,   
             acquire: dbConfig.pool.acquire, 
-            idle: dbConfig.pool.idle
+            idle: dbConfig.pool.idle 
         } 
     } 
  
 )  
   
 sequelize.authenticate() 
-.then(() => {
+.then(() => { 
     console.log('DB Connected...!') 
 }) 
 .catch(err => {  
