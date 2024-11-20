@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
         pool: { 
             max: dbConfig.pool.max,
             min: dbConfig.pool.min,   
-            acquire: dbConfig.pool.acquire, 
+            acquire: dbConfig.pool.acquire,  
             idle: dbConfig.pool.idle 
         }  
     }  
@@ -26,7 +26,7 @@ sequelize.authenticate()
 }) 
 .catch(err => {   
     console.log(' Error :-  ' + err)   
-}) 
+})  
 
  
 const db = {}
