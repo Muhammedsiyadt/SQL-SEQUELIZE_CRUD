@@ -23,7 +23,7 @@ app.use('/api/reviews', reviewRouter)
  
 
 // Testing API
-app.get('/', (req, res) => {
+app.get('/', (req, res) => { 
     res.json({message : 'Hello server initial API'}) 
 })
 
@@ -32,3 +32,4 @@ app.get('/', (req, res) => {
 app.listen(7000, () => { 
     console.log('Server is running...')
 })  
+ 
