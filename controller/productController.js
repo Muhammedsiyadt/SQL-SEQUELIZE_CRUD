@@ -50,7 +50,7 @@ const updateProduct = async (req, res) => {
     let id = req.params.id
     const product = await Product.update(req.body, { where: { id: id } })
  
-    res.status(200).send(product)
+    res.status(200).send(product) 
 }
 
 
@@ -60,7 +60,7 @@ const deleteProduct = async (req, res) => {
     let id = req.params.id
     await Product.destroy({ where: { id: id } }) 
 
-    res.send('Product Is Deleted ! ')
+    res.send('Product Is Deleted ! ') 
 }
 
 
