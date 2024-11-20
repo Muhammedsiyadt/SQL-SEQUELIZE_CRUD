@@ -19,12 +19,12 @@ const sequelize = new Sequelize(
     }  
  
 )  
-   
+    
 sequelize.authenticate()  
 .then(() => { 
     console.log('DB Connected...!')  
 }) 
-.catch(err => {  
+.catch(err => {   
     console.log(' Error :-  ' + err)   
 }) 
 
