@@ -19,7 +19,7 @@ const sequelize = new Sequelize(
     }
  
 ) 
-
+ 
 sequelize.authenticate() 
 .then(() => {
     console.log('DB Connected...!') 
