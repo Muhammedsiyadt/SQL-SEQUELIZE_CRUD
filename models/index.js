@@ -12,19 +12,19 @@ const sequelize = new Sequelize(
 
         pool: {
             max: dbConfig.pool.max,
-            min: dbConfig.pool.min,
+            min: dbConfig.pool.min, 
             acquire: dbConfig.pool.acquire,
             idle: dbConfig.pool.idle
         }
     }
 
-)
+) 
 
 sequelize.authenticate()
 .then(() => {
     console.log('DB Connected...!') 
 })
-.catch(err => {
+.catch(err => { 
     console.log(' Error :-  ' + err)
 }) 
 
