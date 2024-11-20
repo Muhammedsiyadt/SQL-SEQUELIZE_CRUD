@@ -10,17 +10,17 @@ const sequelize = new Sequelize(
         dialect: dbConfig.dialect,
         operatorsAliases: false,  
  
-        pool: {
+        pool: { 
             max: dbConfig.pool.max,
             min: dbConfig.pool.min,  
-            acquire: dbConfig.pool.acquire,
+            acquire: dbConfig.pool.acquire, 
             idle: dbConfig.pool.idle
         }
     }
  
 ) 
 
-sequelize.authenticate()
+sequelize.authenticate() 
 .then(() => {
     console.log('DB Connected...!') 
 })
